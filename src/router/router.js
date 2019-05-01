@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
-/* import Module1 from '@/views/module1/module1'
+import Module1 from '@/views/module1/module1'
 import Module2 from '@/views/module2/module2'
 import Module3 from '@/views/module3/module3'
-import Module4 from '@/views/module4/module4' */
-const Module1 = r => require.ensure([], () => r(require('@/views/module1/module1.vue')), 'module1')
+import Module4 from '@/views/module4/module4'
+/* const Module1 = r => require.ensure([], () => r(require('@/views/module1/module1.vue')), 'module1')
 const Module2 = r => require.ensure([], () => r(require('@/views/module2/module2.vue')), 'module2')
 const Module3 = r => require.ensure([], () => r(require('@/views/module3/module3.vue')), 'module3')
 const Module4 = r => require.ensure([], () => r(require('@/views/module4/module4.vue')), 'module4')
-  
+   */
 Vue.use(Router)
 
 export default new Router({

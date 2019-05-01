@@ -4,7 +4,7 @@
 
 ## 配置环境变量 VUE_APP_URL
 ```
-.env    
+.env
 .env.development
 .env.production
 
@@ -15,10 +15,10 @@ console.log(process.env.VUE_APP_URL,'环境变量')
 ```
 打包后在本地预览，需要启动一个node本地服务
 ```
-cnpm install http-server -g  //全局安装服务
-cd dist/ 进dist目录
+npm install -g serve //全局安装服务
 
-http-server -o  // 启动服务预览
+
+serve -s dist // 启动服务预览
 浏览器控制台获取当前的环境:
 console.log(process.env.VUE_APP_URL)
 ```
