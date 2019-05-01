@@ -2,11 +2,25 @@
 
 这是基于vuecli3.0搭建的后台系统模板，做了Vuex Modules的拆分，实现了开发|测试|生产环境的配置
 
-## 配置环境变量
+## 配置环境变量 VUE_APP_URL
 ```
-.env 
+.env    
 .env.development
 .env.production
+
+```
+```javascript
+// mian.js
+console.log(process.env.VUE_APP_URL,'环境变量')
+```
+打包后在本地预览，需要启动一个node本地服务
+```
+cnpm install http-server -g  //全局安装服务
+cd dist/ 进dist目录
+
+http-server -o  // 启动服务预览
+浏览器控制台获取当前的环境:
+console.log(process.env.VUE_APP_URL)
 ```
 ## 使用
 ```
