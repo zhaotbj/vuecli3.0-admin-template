@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "npm run serve",
-    "test": "vue-cli-service build --mode test",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "dev-build": "vue-cli-service build --mode development",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

@@ -12,7 +12,7 @@ Vue.prototype.$request = request
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
-
+console.log(process.env.VUE_APP_URL,'环境变量')
 new Vue({
   router,
   store,
